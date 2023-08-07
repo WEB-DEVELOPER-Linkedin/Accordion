@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accordion</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+<body  style="background-color: rgb(131, 131, 131);">
+    <h1 class="m-3">First type of Accordion</h1>
+    <p>
+        <button class="btn btn-dark m-5" type="button" data-toggle="collapse" data-target="#collapseExample"
+            aria-expanded="false" aria-controls="collapseExample">
+            Click to Collapse.
+        </button>
+    </p>
+    <div class="collapse m-5" id="collapseExample">
+        <div class="card card-body bg-primary">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus et itaque totam sapiente dolorem rem tempore quasi? Repudiandae sed aspernatur mollitia facere, dolores voluptatem minima nulla quam, cumque, expedita eligendi! Illum deserunt dolor eligendi doloribus blanditiis adipisci! Nostrum eos a ad reiciendis, officia amet repudiandae facere. Nesciunt suscipit eveniet vel!
+        </div>
+    </div>
+    <h1 class="m-3">Second type of Accordion</h1>
+    <div id="accordion"class="m-5">
+        <div class="card m-1">
+            <div class="card-header" id="headingOne" style="background-color: rgb(214, 214, 214);">
+                <h5 class="mb-0">
+                    <button class="btn btn-link bg-dark " data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Collapsible Item - 1
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body bg-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque ex inventore commodi autem fugit laudantium tempore accusamus soluta, repellendus praesentium, consectetur hic veniam, ducimus repudiandae ut error aliquid aspernatur voluptate at impedit ullam! Excepturi voluptates exercitationem repudiandae, laborum sit obcaecati corrupti, odio ratione quasi praesentium facilis fugit, atque aspernatur nemo doloribus veniam amet iusto hic libero accusamus dolores! Numquam veritatis sint quis dicta laudantium nobis dolores consectetur architecto voluptas repudiandae perferendis, rem rerum, eligendi provident nemo molestiae, voluptatibus quam officia obcaecati et aspernatur amet. Fugiat consectetur neque nisi harum amet tempore velit porro culpa possimus, repellendus atque assumenda! Est.
+                </div>
+            </div>
+        </div>
+        <div class="card m-1">
+            <div class="card-header" id="headingTwo"  style="background-color: rgb(221, 221, 221);">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed bg-dark" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        Collapsible Item - 2
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body bg-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium saepe adipisci animi dolor. Culpa nihil excepturi natus optio praesentium quos soluta, exercitationem voluptate aperiam deserunt quidem consequuntur neque voluptatum, debitis consequatur. Accusamus commodi, aperiam quasi quam, reprehenderit veritatis libero, illum rem expedita omnis necessitatibus eaque sit hic. Amet delectus ratione quia quaerat aut fugiat neque, nihil qui impedit. Maxime voluptatibus, vero, dolorum eum qui eligendi accusantium sed vitae asperiores voluptas obcaecati. Doloribus labore perspiciatis quos minima ut consequuntur, voluptatem veritatis ipsa! Repellat minima odit autem consequuntur sunt maxime voluptates laboriosam, esse, corporis obcaecati dolor quas id, ut sed aut. Voluptatibus?
+                </div>
+            </div>
+        </div>
+        <div class="card m-1">
+            <div class="card-header" id="headingThree" style="background-color: rgb(208, 208, 208);">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed bg-dark" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        Collapsible Item - 3
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body bg-primary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iure rem eum possimus qui numquam explicabo eligendi, recusandae maiores odit inventore consectetur ut, dignissimos ea pariatur exercitationem magnam eveniet at debitis quo! Quod omnis explicabo architecto id obcaecati asperiores dicta reiciendis earum aliquam sapiente vel reprehenderit dolore, iusto est voluptatibus cupiditate ut minus? Minus eius molestiae quisquam, odio atque et, debitis est nisi placeat autem sunt ab laboriosam exercitationem delectus illum laudantium totam reiciendis iusto? Qui, esse velit sit rerum eius nam ducimus sapiente repudiandae. Ipsa, consequatur iusto illo placeat non eos error. Ad veritatis quis fugit reiciendis cum necessitatibus ullam porro aspernatur impedit ipsa nostrum beatae velit, consequatur mollitia eligendi quam quaerat adipisci eos reprehenderit voluptate odit qui. Necessitatibus, commodi quod dolor iure aliquid voluptatibus vel doloribus dolorem soluta amet illo, libero quas nam quos? Nulla laudantium non, delectus iure magnam dicta magni asperiores quasi voluptates modi nam impedit!
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
